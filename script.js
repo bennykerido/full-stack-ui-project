@@ -22,13 +22,13 @@ var obsticale = Math.floor(Math.random()*30+10);
 var score = 0;
 
 var colSound = new Audio();
-colSound.src = "https://full-stack-ui-project.vercel.app/Audio/crash.mp3";
+colSound.src = "Audio/crash.mp3";
 
 var countingBeeps = new Audio();
-countingBeeps.src = "https://full-stack-ui-project.vercel.app/Audio/counting.mp3";
+countingBeeps.src = "Audio/counting.mp3";
 
 var bgSong = new Audio();
-bgSong.src = "https://full-stack-ui-project.vercel.app/Audio/bg-song.mp3";
+bgSong.src = "Audio/bg-song.mp3";
 var isMusicOn = false;
 var volume = 0.2;
 
@@ -54,30 +54,30 @@ var lightsImg = new Image();
 var sewage;
 var sewImg = new Image();
 
-bgImg.src = "https://full-stack-ui-project.vercel.app/Images/Road1.png";
+bgImg.src = "Images/Road1.png";
 bgImg.onload = function(){
     bg = new Background(bgImg);
-    userCarImg.src = "https://full-stack-ui-project.vercel.app/Images/playerCars.png";
+    userCarImg.src = "Images/playerCars.png";
     userCarImg.onload = function(){
         userCar = new UserCar(userCarImg); 
-        cars.src = "https://full-stack-ui-project.vercel.app/Images/playerCars.png";
+        cars.src = "Images/playerCars.png";
         cars.onload = function(){
             randomCars = [new RandomCars(cars), new RandomCars(cars),  new RandomCars(cars),  new RandomCars(cars)];
-            treeImg.src = "https://full-stack-ui-project.vercel.app/Images/Tree.png";
+            treeImg.src = "Images/Tree.png";
             treeImg.onload = function(){
                 tree = new Tree(treeImg);
-                islandImg.src = "https://full-stack-ui-project.vercel.app/Images/Seperator.png";
+                islandImg.src = "Images/Seperator.png";
                 islandImg.onload = function(){
                     island = new Island(islandImg);
-                    lightsImg.src = "https://full-stack-ui-project.vercel.app/Images/trafficLight.png";
+                    lightsImg.src = "Images/trafficLight.png";
                     lightsImg.onload = function(){
                         lights = new TrafficLights(lightsImg);
-                        sewImg.src = "https://full-stack-ui-project.vercel.app/Images/sewage.png";
+                        sewImg.src = "Images/sewage.png";
                         sewImg.onload = function(){
                             sewage = new Sewage(sewImg);
-                            key.src = "https://full-stack-ui-project.vercel.app/Images/key.png";
+                            key.src = "Images/key.png";
                             key.onload = function(){
-                                logo.src = "https://full-stack-ui-project.vercel.app/Images/logoR2I.png";
+                                logo.src = "Images/logoR2I.png";
                                 logo.onload = function(){
                                     startGame();
                                 };
