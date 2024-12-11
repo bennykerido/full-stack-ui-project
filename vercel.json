@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/Images/(.*)", // Adjust this path to match the folder where your static files are stored
+      "source": "/Images/(.*)",
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "https://www.bennykerido.dev" }, 
         { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS" },
@@ -9,7 +9,7 @@
       ]
     },
     {
-      "source": "/Audio/(.*)", // Adjust this path to match the folder where your static files are stored
+      "source": "/Audio/(.*)",
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "https://www.bennykerido.dev" }, 
         { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS" },
