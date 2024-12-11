@@ -1,15 +1,7 @@
 {
   "headers": [
     {
-      "source": "/Images/(.*)",
-      "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "https://www.bennykerido.dev" }, 
-        { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS" },
-        { "key": "Access-Control-Allow-Headers", "value": "X-Requested-With, Content-Type, Authorization" }
-      ]
-    },
-    {
-      "source": "/Audio/(.*)",
+      "source": "/(.*)",
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "https://www.bennykerido.dev" }, 
         { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS" },
